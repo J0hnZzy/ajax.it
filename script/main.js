@@ -44,14 +44,16 @@ document.addEventListener('DOMContentLoaded', (e) => {
         console.log('work');
         let pass = document.querySelector('#login-pass').value;
         let mail = document.querySelector('#login-mail').value;
+        
         let data = {
             "pass" : pass,
             "email" : mail
         }
+        
         ajax('core/login.php', 'post', login, data);
+
         function login(result){
             console.log(result);
-        }
         if(result == 2){
             alert("enter values...");
         }
@@ -60,6 +62,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
         }
         else{
             console.log(result);
+        }
         }
     }   
 });
