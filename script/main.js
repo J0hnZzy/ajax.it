@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', (e) => {
-    document.querySelector('#signup-submit').onclick = function(){
+    document.querySelector('#signup-submit').addEventListener = function(){
         event.preventDefault();
         console.log('work');
         let name = document.querySelector('#signup-name').value;
