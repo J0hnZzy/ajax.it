@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', (e) => {
-    document.querySelector('#signup-submit').addEventListener = function(){
+    document.querySelector('#signup-submit').addEventListener ("click", function(){
         event.preventDefault();
         console.log('work');
         let name = document.querySelector('#signup-name').value;
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
             alert("ERROR 404");
         }
     }   
-
+)
 
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<LOGIN>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\\
 
