@@ -23,15 +23,15 @@ document.addEventListener('DOMContentLoaded', (e) => {
         ajax('core/signup.php', 'post', signup, data);
         function signup(result){
             console.log(result);
-        }
-        if(result == 2){
-            alert("enter values...");
-        }
-        else if(result == 1){
-            alert("you are registered!)")
-        }
-        else{
-            alert("ERROR 404");
+            if(result == 2){
+                alert("enter values...");
+            }
+            else if(result == 1){
+                alert("you are registered!)")
+            }
+            else{
+                alert("ERROR 404");
+            }
         }
     }   
 )
@@ -53,7 +53,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
         ajax('core/login.php', 'post', login, data);
 
         function login(result){
-            console.log(result);
         if(result == 2){
             alert("enter values...");
         }
@@ -61,7 +60,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
             alert("No such a person!)")
         }
         else{
-            console.log(result);
+            aler("You are loged in!");
         }
         }
     }   
