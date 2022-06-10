@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
                 alert("enter values...");
             }
             else if(result == 1){
-                alert("you are registered!)")
+                alert("you are registered!")
             }
             else{
                 alert("ERROR 404");
@@ -60,8 +60,12 @@ document.addEventListener('DOMContentLoaded', (e) => {
             alert("No such a person!)")
         }
         else{
-            aler("You are loged in!");
+            alert("You are loged in!");
+            console.log(result);
+            result = JSON.parse(result); 
+            document.cookie = `username=${result.email}; expires=Sun, 18 Dec 2022 00:00:00 UTC; path=/`;
+            location.href = "cabinet.php";
         }
-        }
+    }
     }   
 });
