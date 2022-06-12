@@ -20,7 +20,9 @@ document.addEventListener('DOMContentLoaded', (e) => {
             "birthday" : birthday,
             "sex" : sex,
         }
+
         ajax('core/signup.php', 'post', signup, data);
+        
         function signup(result){
             console.log(result);
             if(result == 2){
