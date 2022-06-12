@@ -71,6 +71,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
             document.cookie = `username=${result.email}; expires=${expires}; path=/`;
             location.href = "cabinet.php";
         }
-    }
+        }
     }   
 });
