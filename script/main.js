@@ -63,7 +63,10 @@ document.addEventListener('DOMContentLoaded', (e) => {
             alert("You are loged in!");
             console.log(result);
             result = JSON.parse(result); 
-            document.cookie = `username=${result.email}; expires=Sun, 18 Dec 2022 00:00:00 UTC; path=/`;
+            const d = new Date();
+            d.setTime(d.getTime() + (60*1000));
+            let expires = d.toUTCString();
+            document.cookie = `username=${result.email}; expires=${expires}; path=/`;
             location.href = "cabinet.php";
         }
     }
