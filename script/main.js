@@ -54,12 +54,13 @@ document.addEventListener('DOMContentLoaded', (e) => {
         
         ajax('core/login.php', 'post', login, data);
 
+        
         function login(result){
         if(result == 2){
             alert("enter values...");
         }
         else if(result == 0){
-            alert("No such a person!)")
+            alert("No such a person!)");
         }
         else{
             alert("You are loged in!");
