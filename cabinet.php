@@ -4,7 +4,5 @@
         header("Location: index.html");
         exit; 
     }
-    
-    hello
-
 ?>
+    hello!
